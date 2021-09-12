@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/login_and_register"
+    android:weightSum="10">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+
+        android:layout_gravity="center"
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="iChat - A Chatting Application"
+        android:textAlignment="center"
+        android:fontFamily="@font/scriptbl"
+        android:textSize="25sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        android:layout_marginTop="110dp">
+        <EditText
+            android:id="@+id/register_email"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="55dp"
+            android:layout_marginRight="40dp"
+            android:textSize="20sp"
+            android:hint=" Email..."
+            android:inputType="textEmailAddress" />
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/register_password"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="55dp"
+                android:layout_marginRight="40dp"
+                android:textSize="20sp"
+                android:hint=" Password..."
+                android:textStyle="italic"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <!--<android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true">
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:textSize="20sp"
+                android:hint="  Re-type password"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/lock"
+                android:inputType="textPassword"/>
+
+        </android.support.design.widget.TextInputLayout> -->
+
+
+        <!--<EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:hint="Re-type password"
+            android:drawableLeft="@drawable/lock"
+            android:inputType="textPassword" />-->
+
+        <Button
+            android:id="@+id/register_button"
+            android:layout_width="280dp"
+            android:layout_height="35dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="40dp"
+            android:textSize="25sp"
+            android:background="@drawable/reg_btn_style"
+            android:text="Register"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/already_have_an_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Already have an Account"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+</LinearLayout>

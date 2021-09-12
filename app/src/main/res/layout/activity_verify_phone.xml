@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_and_register"
+    tools:context=".VerifyPhoneActivity">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="150dp"
+        android:id="@+id/logooo"
+
+        android:scaleType="fitCenter"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="iChat - A Chatting Application"
+        android:textAlignment="center"
+        android:fontFamily="@font/scriptbl"
+        android:layout_below="@+id/logooo"
+        android:id="@+id/textchat"
+        android:textSize="25sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_below="@+id/textchat">
+    </View>
+
+    <EditText
+        android:id="@+id/verification_code_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="45dp"
+        android:digits="0123456789"
+        android:hint="Write verification code here..."
+        android:maxLength="6"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textAllCaps="false"
+        android:layout_marginTop="300dp"
+        android:textAlignment="center"
+        />
+
+
+    <Button
+        android:id="@+id/verify_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verification_code_input"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginRight="40dp"
+        android:background="#25A59A"
+        android:text="Confirm"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="25sp"
+        />
+
+</RelativeLayout>

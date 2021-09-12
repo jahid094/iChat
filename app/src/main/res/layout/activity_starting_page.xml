@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".StartingPage"
+    android:weightSum="10"
+
+    android:background="@drawable/splashh"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/logo"
+            android:layout_marginLeft="50dp"
+            android:id="@+id/logo"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to iChat"
+            android:textSize="40dp"
+            android:textColor="#00B0FF"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/logo"
+            android:fontFamily="@font/scriptbl"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/logo"
+        android:layout_marginLeft="150dp"
+        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talk Less , "
+            android:textAlignment="viewEnd"
+            android:textColor="#2C2D2E"
+            android:textSize="50dp"
+            android:fontFamily="@font/scriptbl"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chat more....."
+            android:textColor="#2C2D2E"
+            android:textSize="50dp"
+            android:fontFamily="@font/scriptbl"
+
+            />
+
+
+    </LinearLayout>
+</LinearLayout>

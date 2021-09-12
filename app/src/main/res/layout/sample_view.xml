@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/countryImageViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/afghanisthan"
+        android:padding="5dp"
+        android:layout_gravity="center"
+        />-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/countryNametextViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Afghanistan"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            />
+        <TextView
+            android:id="@+id/countryCodetextViewId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="93"
+            android:textStyle="bold"
+            android:textSize="28sp"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            />
+    </LinearLayout>
+
+</LinearLayout>

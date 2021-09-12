@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FindFriendsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/find_friends_appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include
+                android:id="@+id/find_friends_toolbar"
+                layout="@layout/app_bar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></include>
+
+
+        </android.support.design.widget.AppBarLayout>
+        <TextView
+            android:id="@+id/hintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="Search for people and friends from School, College and University"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/find_friends_appBarLayout"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"/>
+        <LinearLayout
+            android:id="@+id/search_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/hintText"
+            android:layout_marginTop="25dp"
+            android:weightSum="11">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="9">
+
+                <EditText
+                    android:id="@+id/search_input_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+
+                    android:hint="Search a friend here..."
+                    android:inputType="textMultiLine"
+                    android:textAlignment="center"
+                    android:textSize="30dp"/>
+                <ImageButton
+                    android:id="@+id/crossButton"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_alignRight="@+id/search_input_text"
+                    android:src="@drawable/crossicon"
+                    android:visibility="invisible"
+
+                    android:layout_toRightOf="@id/search_input_text"
+                    />
+
+
+                <ImageButton
+                    android:id="@+id/search_people_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="70dp"
+                    app:srcCompat="@drawable/search"
+                    android:layout_below="@id/search_input_text"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/find_friends_recycler_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/search_layout"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"></android.support.v7.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

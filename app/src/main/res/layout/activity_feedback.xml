@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@drawable/login_and_register"
+    android:orientation="vertical"
+    android:weightSum="4"
+    tools:context=".FeedbackActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        android:fontFamily="@font/scriptbl"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:orientation="vertical"
+
+        >
+        <EditText
+            android:id="@+id/feedbackNameEditTextId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="45dp"
+            android:hint="Enter your name..."
+
+
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/feedbackMessageEditTextId"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="45dp"
+            android:hint="Enter your Message here..."
+
+            android:textSize="17sp"
+            android:textStyle="bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        >
+        <Button
+            android:id="@+id/feedbackSendButtonId"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:text="Send"
+            android:textStyle="bold"
+            android:textSize="17sp"
+            android:background="#25A59A"
+            />
+        <Button
+            android:id="@+id/feedBackClearButtonId"
+            android:layout_width="135dp"
+            android:layout_height="35dp"
+            android:text="Clear"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:textSize="17sp"
+            android:background="#25A59A"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="280dp"
+        android:layout_height="35dp"
+        android:id="@+id/backtohomeid"
+        android:background="#25A59A"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="17dp"
+        android:textStyle="bold"
+
+
+        android:text="Back to Home"/>
+
+</LinearLayout>
